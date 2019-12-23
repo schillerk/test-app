@@ -71,9 +71,13 @@ export default function App() {
 
   const projects = MOCK_PROJECT_DATA.map(project => <Project {...project} />);
 
+  console.log(process);
+  console.log(process.env);
+  console.log(process.env.PUBLIC_URL);
+
   return (
     <div>
-      router test 3
+      router test 5
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
