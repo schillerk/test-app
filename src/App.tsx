@@ -73,7 +73,7 @@ export default function App() {
 
   return (
     <div>
-      router test
+      router test 2
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
