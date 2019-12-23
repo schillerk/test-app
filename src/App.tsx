@@ -77,6 +77,7 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
+            skldjklj
             <Header title="Quest Board" />
             {projects}
           </Route>
