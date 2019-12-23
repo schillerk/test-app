@@ -72,6 +72,20 @@ export default function App() {
   const projects = MOCK_PROJECT_DATA.map(project => <Project {...project} />);
 
   return (
+    <div>
+      router test
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Header title="Quest Board" />
+            {projects}
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+
+  return (
     <Context.Provider value={{ state, dispatch }}>
       <GlobalStyle />
       <Shell>
